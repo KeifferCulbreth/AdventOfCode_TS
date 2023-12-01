@@ -64,7 +64,7 @@ function part2(input: string[]): number {
             if (firstIndex > -1 && firstIndex < numbers.first.index) {
                 numbers = helper(firstIndex, stringValMap[numStr], numbers)
             }
-            if (string.lastIndexOf(numStr) > numbers.last.index) {
+            if (lastIndex > numbers.last.index) {
                 numbers = helper(lastIndex, stringValMap[numStr], numbers)
             }
         }
